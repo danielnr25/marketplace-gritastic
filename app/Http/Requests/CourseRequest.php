@@ -31,7 +31,7 @@ class CourseRequest extends FormRequest
                     'categories'  => 'required|array',
                     'description' => 'required|min:50',
                     'price'       => 'required',
-                    'picture'     => 'required|image|mimes:jpg,jpeg,png'
+                    'picture'     => 'required'
                 ];
             }
             case "PUT":
@@ -41,7 +41,7 @@ class CourseRequest extends FormRequest
                     'categories'  => 'required|array',
                     'description' => 'required|min:50',
                     'price'       => 'required',
-                    'picture'     => 'required|sometimes|image|mimes:jpg,jpeg,png'
+                    'picture'     => 'required'
                 ];
             }
             default:

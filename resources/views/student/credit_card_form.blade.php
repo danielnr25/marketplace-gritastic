@@ -5,7 +5,7 @@
         <!---- Title --->
         <div class="row mb-4">
             <div class="col-lg-8 mx-auto text-center">
-                <h1 class="display-4" style="color:#000">{{ __("Tus datos de pago") }}</h1>
+                <h1 class="text-web" style="color:#000">{{ __("Tus datos de pago") }}</h1>
             </div>
         </div>
         <!----END Title --->
@@ -17,7 +17,7 @@
                         <li class="nav-item">
                             <a data-toggle="pill" href="#nav-tab-card" class="nav-link rounded-pill">
                                 <i class="fa fa-credit-card"></i>
-                                {{ __("Información de tu tarjeta en :app Perú", ["app" => env("APP_NAME")]) }}
+                                {{ __("Ingresa la información de tu tarjeta", ["app" => env("APP_NAME")]) }}
                             </a>
                         </li>
                     </ul>
@@ -46,8 +46,8 @@
                                         >
                                         <div class="input-group-append">
                                             <span class="input-group-text">
-                                                <i class="fa fa-cc-visa mx-1"></i>
-                                                <i class="fa fa-cc-mastercard mx-1"></i>
+                                                <i style="color:#000" class="fa fa-cc-visa mx-1"></i>
+                                                <i style="color:#000"  class="fa fa-cc-mastercard mx-1"></i>
                                             </span>
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@
                                     </div>
                                 </div>
                                 <button
-                                    type="submit" class="site-btn btn-block rounded-pill shadow-sm" style="background: #0f04bb; border-radius:9px;"
+                                    type="submit" class="crear-btn btn-block rounded-pill shadow-sm"
                                 >{{ __("Guardar tarjeta") }}</button>
                             </form>
                         </div>

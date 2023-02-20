@@ -16,8 +16,8 @@ trait ManageCourses {
 
     public function createCourse(CourseRequest $request) {
         $course = New Course;
-        $title = __("Crear nuevo curso");
-        $textButton = __("Crear curso");
+        $title = __("Registrar producto");
+        $textButton = __("Crear producto");
         $options = ['route' => [
             'teacher.courses.store'], 'files' => true
         ];
@@ -28,8 +28,8 @@ trait ManageCourses {
 
     public function editCourse(Course $course) {
         $course->load("units");
-        $title = __("Editar curso :course", ["course" => $course->title]);
-        $textButton = __("Actualizar curso");
+        $title = __("Editar producto :course", ["course" => $course->title]);
+        $textButton = __("Actualizar producto");
         $options = ['route' => [
             'teacher.courses.update', ['course' => $course]], 'files' => true
         ];
@@ -43,20 +43,20 @@ trait ManageCourses {
         try {
             DB::beginTransaction();
 
-            $file = null;
+           /*  $file = null;
             if ($request->hasFile('picture')) {
                 $file = Uploader::uploadFile('picture', 'courses');
-            }
+            } */
 
-            $course = Course::create($this->courseInput($file));
+            $course = Course::create($this->courseInput());
             $course->categories()->sync(request("categories"));
 
             DB::commit();
-            session()->flash("message", ["success", __("Curso creado correctamente")]);
+            session()->flash("message", ["success", __("Producto creado correctamente")]);
             return redirect(route('teacher.courses.edit', ['course' => $course]));
 
         }catch(\Throwable $exception) {
-            
+
             session()->flash("message", ["danger", $exception->getMessage()]);
             return back();
         }
@@ -79,7 +79,7 @@ trait ManageCourses {
             $this->updateOrderedUnits();
 
             DB::commit();
-            session()->flash("message", ["success", __("Curso actualizado correctamente")]);
+            session()->flash("message", ["success", __("Producto actualizado correctamente")]);
             return back();
 
         }catch(\Throwable $exception) {
@@ -94,7 +94,7 @@ trait ManageCourses {
             "title" => request("title"),
             "description" => request("description"),
             "price" => request("price"),
-            "picture" => $file,
+            "picture" => request("picture"),
             "featured" => $featured
         ];
     }

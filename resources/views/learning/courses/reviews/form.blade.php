@@ -55,7 +55,7 @@
                         <div class="col-12">
                             <button type="submit" class="site-btn btn-block text-white">
                                 <i class="fa fa-space-shuttle"></i>
-                                {{ __("Valorar curso") }}
+                                {{ __("Valorar Producto") }}
                             </button>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                                class="btn btn-dark btn-lg p-2 btn-block text-white"
                             >
                                 <i class="fa fa-arrow-left"></i>
-                                {{ __("Volver curso") }}
+                                {{ __("Volver") }}
                             </a>
                         </div>
                     </div>

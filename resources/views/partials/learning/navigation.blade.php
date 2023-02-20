@@ -30,18 +30,18 @@
                 @endguest
                 <nav class="main-menu">
                     <ul>
-                        <li><a href="{{ route('welcome') }}">{{ __("Inicio") }}</a></li>
+                        <li><a href="{{ route('welcome') }}" class="">{{ __("Inicio") }}</a></li>
                         <li><a href="{{ route('courses.index') }}">{{ __("Productos") }}</a></li>
                         <li><a href="blog.html">Nosotros</a></li>
                         <li><a href="#" id="instructor-button">{{ __("Vender") }}</a>
                             @include('partials.learning.modals.instructor')
                         </li>
                         @teacher
-                        <li><a class="brand-text" href="{{ route('teacher.index') }}">{{ __("Mis cursos") }}
+                        <li><a class="brand-text" href="{{ route('teacher.index') }}">{{ __("Dashboard") }}
                             </a></li>
                         @endteacher
                         @auth
-                        <li><a class="brand-text" href="{{ route('student.index') }}">{{ __("Mi Aprendizaje") }}</a></li>
+                        <li><a class="brand-text" href="{{ route('student.index') }}">{{ __("Almacen") }}</a></li>
                         @endauth
                     </ul>
                 </nav>

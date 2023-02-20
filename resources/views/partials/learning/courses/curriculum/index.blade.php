@@ -4,7 +4,7 @@
         @include("partials.learning.courses.curriculum." .strtolower($unit->unit_type))
     @empty
         <div class="empty-results">
-            {{ __("El contenido de este curso aun no está definido") }}
+            {{ __("Compra para acceder a todas a las imagenes") }}
         </div>
     @endforelse
 </div>

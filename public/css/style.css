@@ -1,7 +1,7 @@
 html,
 body {
     height: 100%;
-    font-family: 'Raleway','Muli', sans-serif;
+    font-family: 'Raleway', 'Muli', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     background-color: #f9fafb;
@@ -102,11 +102,22 @@ ol {
     margin-bottom: 10px;
 }
 
+.tendencias {
+    margin-left: -3.9rem;
+}
+
+.tendencias h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #171717;
+}
+
 .section-title h2 {
     font-size: 2em;
     font-weight: 600;
     margin-bottom: 25px;
-    color: #031b4e;
+    color: #000000;
 }
 
 .section-title p {
@@ -167,6 +178,25 @@ ol {
     background: #0a00a8;
 }
 
+.crear-btn {
+    display: inline-block;
+    min-width: 128px;
+    text-align: center;
+    border: 2px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    background: #060422;
+}
+
+.crear-btn:hover {
+    color: #fff;
+}
+
 .logout-btn {
     display: inline-block;
     min-width: 128px;
@@ -225,9 +255,10 @@ ol {
     cursor: pointer;
 }
 
-.regis-btn:hover{
+.regis-btn:hover {
     color: #fff;
 }
+
 .logout-btn:hover,
 .login-btn:hover {
     color: #031b4e;
@@ -289,12 +320,14 @@ ol {
         border: 4px solid #f44336;
         border-left-color: transparent;
     }
+
     50% {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
         border: 4px solid #673ab7;
         border-left-color: transparent;
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -309,11 +342,13 @@ ol {
         border: 4px solid #f44336;
         border-left-color: transparent;
     }
+
     50% {
         -webkit-transform: rotate(180deg);
         border: 4px solid #673ab7;
         border-left-color: transparent;
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         border: 4px solid #f44336;
@@ -392,10 +427,36 @@ ol {
     height: 528px;
 }
 
+.panel {
+    padding-top: 2rem;
+}
+
+.panel-text {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.panel-text h2 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .hero-text {
     text-align: center;
     padding-top: 160px;
     margin-bottom: 60px;
+}
+
+.text-web {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #000000;
 }
 
 .hero-banner {
@@ -408,7 +469,7 @@ ol {
     width: 100%;
 }
 
-.hero-content{
+.hero-content {
     position: absolute;
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
     padding: 2.2rem;
@@ -422,14 +483,14 @@ ol {
     width: 100vw;
 }
 
-.hero-title{
+.hero-title {
     font-size: 2.2rem;
     font-weight: 600;
     color: #000;
     margin-bottom: 1.6rem;
 }
 
-.hero-subtitle{
+.hero-subtitle {
     min-width: initial;
     font-size: 1.3rem;
     font-weight: 400;
@@ -448,7 +509,7 @@ ol {
     font-size: 38px;
     font-weight: 600;
     line-height: 1.3;
-    color: #031b4e;
+    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -462,6 +523,38 @@ ol {
     float: none;
     border: none;
     font-size: 14px;
+    color: #000;
+}
+
+.title-cart {
+    font-size: 0.98rem;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.6rem;
+}
+
+.total-card {
+    font-size: 1.1rem;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.6rem;
+}
+
+.cart-newslatter input[type=text],
+.cart-newslatter input[type=email],
+.cart-newslatter input[type=password] {
+    height: 46px;
+    width: 36%;
+    padding: 0 30px;
+    border-radius: 10px;
+    margin-right: -5px;
+    float: none;
+    border: none;
+    font-size: 14px;
+    color: #000;
+}
+
+.cart-newslatter::placeholder {
     color: #000;
 }
 
@@ -653,17 +746,20 @@ ol {
 }
 
 .course-item .course-info {
-    background: #edf2f3;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 12px;
 }
 
 .course-item .course-info .course-text {
-    padding: 45px 33px 25px;
+    padding: 25px 33px 25px;
 }
 
 .course-item .course-info .course-text h5 {
     margin-bottom: 5px;
     font-weight: 600;
     color: #031b4e;
+    font-size: 16px;
 }
 
 .course-item .course-info .course-text .students {
@@ -838,11 +934,12 @@ ol {
     border-bottom: 1px solid #000000;
 }
 
-.register-form  input[type=file],
+.register-form input[type=file],
 .signup-form input[type=file],
 .contact-form input[type=file] {
     display: none;
 }
+
 .register-form textarea,
 .signup-form textarea,
 .contact-form textarea {
@@ -887,7 +984,7 @@ ol {
   Academic section
 ---------------------*/
 
-.academy{
+.academy {
     max-width: 1080px;
     margin: 0 auto;
     padding: 1px 1rem 8px;
@@ -895,22 +992,22 @@ ol {
     margin-bottom: 3rem;
 }
 
-.row{
+.row {
     display: flex;
     overflow: hidden;
     margin-left: 0;
     margin-right: 0;
 }
 
-.column{
+.column {
     flex: 1;
 }
 
-.column:first-of-type{
+.column:first-of-type {
     margin-right: 50px;
 }
 
-.academy h2{
+.academy h2 {
     display: block;
     font-size: 33px;
     line-height: 1.5;
@@ -923,7 +1020,7 @@ ol {
     margin-inline-end: 0px;
 }
 
-.academy h3{
+.academy h3 {
     color: rgb(3 27 78 / .8);
     margin-top: 10px;
     line-height: 1.8;
@@ -936,13 +1033,13 @@ ol {
     margin-inline-end: 0px;
 }
 
-.column img{
+.column img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.btn-academy{
+.btn-academy {
     display: inline-block;
     min-width: 128px;
     text-align: center;
@@ -958,7 +1055,7 @@ ol {
 
 }
 
-.btn-academy:hover{
+.btn-academy:hover {
     color: #fff;
 }
 
@@ -966,11 +1063,11 @@ ol {
   Function section
 ---------------------*/
 
-.back-blue{
+.back-blue {
     background-color: #f6f9fc;
 }
 
-.reasons{
+.reasons {
     max-width: 980px;
     margin: 0 auto;
     padding: 35px 2rem 70px;
@@ -978,7 +1075,7 @@ ol {
     margin-top: 6rem;
 }
 
-.reasons h1{
+.reasons h1 {
     text-align: center;
     font-weight: 600;
     margin: 0;
@@ -989,25 +1086,26 @@ ol {
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    color : #031b4e;
+    color: #031b4e;
 }
 
-.content{
+.content {
     position: relative;
 }
 
-.stripe{
+.stripe {
     height: 1125px;
     background-color: #fff;
     width: 5px;
     position: absolute;
     left: 6px;
 }
-.section{
+
+.section {
     position: relative;
 }
 
-.circle{
+.circle {
     height: 90px;
     display: flex;
     overflow: hidden;
@@ -1021,7 +1119,7 @@ ol {
     box-shadow: inset 0 0 5px rgb(0 0 0 / 15%), 0 0 7px #fff;
 }
 
-.inset{
+.inset {
     display: flex;
     height: 60px;
     background-color: #fff;
@@ -1068,7 +1166,8 @@ ol {
     line-height: 1.6;
 }
 
-.reasons h3, .home .stn-categories h3 {
+.reasons h3,
+.home .stn-categories h3 {
     color: rgba(3, 27, 78, .6);
     line-height: 1.8;
     display: block;
@@ -1081,21 +1180,21 @@ ol {
 }
 
 
-.categories{
+.categories {
     font-size: 2em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: 400;
-    color: #031b4e;
+    color: #000000;
     line-height: 1.6;
 }
 
 /*------------------
   category-course section
 ---------------------*/
-.content-ctg{
+.content-ctg {
     max-width: 1080px;
     margin: 0 auto;
     padding: 130px 2rem 50px;
@@ -1103,22 +1202,22 @@ ol {
     line-height: 1.6;
 }
 
-.ctg-title{
+.ctg-title {
     margin: 0;
     line-height: 1.4;
 }
 
-.ctg-title h2{
+.ctg-title h2 {
     font-size: 2em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    color : #031b4e;
+    color: #031b4e;
     font-weight: 500;
 }
 
-.ctg-title p{
+.ctg-title p {
     font-size: 14.1px;
     font-weight: 500;
     margin-top: 0;
@@ -1127,12 +1226,12 @@ ol {
     color: rgba(3, 27, 78, .8);
 }
 
-.cards .rows{
+.cards .rows {
     padding: 3rem;
     display: flex;
 }
 
-.card{
+.card {
     box-sizing: border-box;
     background-color: #fff;
     padding: 10px;
@@ -1140,25 +1239,25 @@ ol {
     margin-right: 0.75em;
 }
 
-.card:last-of-type{
+.card:last-of-type {
     margin-right: 0;
 }
 
-cards .card .img{
+cards .card .img {
     overflow: hidden;
     border: 1px solid rgba(3, 27, 78, .1);
 }
 
-.card .img img{
+.card .img img {
     width: 102%;
     margin: -1% -1% -4% -1%;
 }
 
-.cards .card .description{
+.cards .card .description {
     margin-top: 10px;
 }
 
-.card .description h5{
+.card .description h5 {
     margin: 0;
     display: block;
     font-size: 0.83em;
@@ -1170,13 +1269,13 @@ cards .card .img{
     font-weight: 400;
 }
 
-.card .description .name-course{
+.card .description .name-course {
     height: 50px;
     overflow: hidden;
     line-height: 1.3;
 }
 
-.description .name-course h4{
+.description .name-course h4 {
     margin: 0;
     font-weight: 600;
     display: block;
@@ -1188,7 +1287,7 @@ cards .card .img{
     color: #383c45;
 }
 
-.description .name-course p{
+.description .name-course p {
     margin: 0;
     font-weight: 400;
     display: block;
@@ -1200,14 +1299,14 @@ cards .card .img{
     color: #031b4e;
 }
 
-.description .name-subcategory{
+.description .name-subcategory {
     margin-top: 10px;
     color: rgba(3, 27, 78, .6);
     height: 45px;
     overflow: hidden;
 }
 
-.dimmable:hover{
+.dimmable:hover {
     overflow: hidden;
     background-color: #fff;
     position: relative;
@@ -1216,7 +1315,7 @@ cards .card .img{
     background: rgba(0, 0, 0, 0.05);
 }
 
-.dimmable:hover .dimmer{
+.dimmable:hover .dimmer {
     display: block;
     opacity: 1;
     z-index: 10;
@@ -1241,7 +1340,7 @@ cards .card .img{
     will-change: opacity;
 }
 
-.dimmable:hover .dimmer .content{
+.dimmable:hover .dimmer .content {
     width: 100%;
     height: 100%;
     display: table;
@@ -1251,16 +1350,16 @@ cards .card .img{
     user-select: text;
 }
 
-.dimmable:hover .dimmer .content .center{
+.dimmable:hover .dimmer .content .center {
     display: table-cell;
     vertical-align: middle;
 }
 
-.dimmable .dimmer .content .center .button{
+.dimmable .dimmer .content .center .button {
     display: none;
 }
 
-.dimmable:hover .dimmer .content .center.open .button{
+.dimmable:hover .dimmer .content .center.open .button {
     color: #FFF;
     padding: 10px 15px;
     cursor: pointer;
@@ -1288,10 +1387,11 @@ cards .card .img{
 /*------------------
   Footer section
 ---------------------*/
-.footer-widget{
+.footer-widget {
     display: flex;
 }
-.btn-widget{
+
+.btn-widget {
     margin-left: 1rem;
     display: flex;
     padding-top: 0.5rem;
@@ -1311,7 +1411,8 @@ cards .card .img{
     border-width: 1px;
     border-color: transparent;
 }
-.footer-widget input[type=email]{
+
+.footer-widget input[type=email] {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1rem;
@@ -1329,6 +1430,7 @@ cards .card .img{
     appearance: none;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
+
 .footer-section {
     background: #111827;
     border-top: 3px solid #d1d5db;
@@ -1467,7 +1569,7 @@ cards .card .img{
 }
 
 
-.insc-btn{
+.insc-btn {
     display: inline-block;
     min-width: 128px;
     text-align: center;
@@ -1482,13 +1584,13 @@ cards .card .img{
     background: #0a00a8;
 }
 
-.insc-btn:hover{
+.insc-btn:hover {
     background: #0a00a8;
     color: #fff;
 }
 
 
-.ver-btn{
+.ver-btn {
     display: inline-block;
     min-width: 128px;
     text-align: center;
@@ -1503,7 +1605,7 @@ cards .card .img{
     background: #1d1a45;
 }
 
-.ver-btn:hover{
+.ver-btn:hover {
     background: #0a00a8;
     color: #fff;
 }
@@ -1513,14 +1615,14 @@ cards .card .img{
 --------------------
 =======================*/
 
-.st-main{
-    padding:120px 2rem 0;
+.st-main {
+    padding: 120px 2rem 0;
     max-width: 1080px;
     margin: 0 auto;
     box-sizing: content-box;
 }
 
-.web{
+.web {
     font-size: 40px;
     font-weight: 600;
     margin: 0 0 16px;
@@ -1529,10 +1631,10 @@ cards .card .img{
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    color: #0a35ab;
+    color: #000000;
 }
 
-.web-p{
+.web-p {
     line-height: 1.8;
     margin-top: 0;
     display: block;
@@ -1540,11 +1642,11 @@ cards .card .img{
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    color: #031b4e;
+    color: #1f2937;
     font-size: 18.1px;
 }
 
-.docente{
+.docente {
     font-size: 14px;
     font-weight: 500;
     color: #031b4e;
@@ -1589,11 +1691,11 @@ cards .card .img{
     color: #d82a4e;
 }
 
-.fa-2x{
+.fa-2x {
     font-size: 1.17rem;
 }
 
-.web-h{
+.web-h {
     font-size: 20px;
 }
 
@@ -2187,34 +2289,44 @@ cards .card .img{
     .main-menu ul li a {
         margin-left: 38px;
     }
+
     .header-btn {
         min-width: 160px;
     }
+
     .hero-text h2 {
         font-size: 55px;
     }
+
     .intro-newslatter .site-btn {
         min-width: 160px;
     }
+
     .course-search-form input[type=text],
     .course-search-form input[type=email] {
         width: 34.6%;
     }
+
     .course-search-form .site-btn {
         min-width: 173px;
     }
+
     .course-item .course-thumb {
         height: 220px;
     }
+
     .course-item .course-info .course-text {
         padding: 45px 15px 25px;
     }
+
     .course-item .course-info .course-author {
         padding: 14px 15px;
     }
+
     .signup-warp {
         padding: 0 35px;
     }
+
     .course-meta {
         padding: 5px 20px;
     }
@@ -2226,65 +2338,82 @@ cards .card .img{
     .section-title {
         padding: 0;
     }
+
     .main-menu ul li a {
         margin-left: 20px;
     }
+
     .header-btn {
         min-width: 90px;
     }
+
     .hero-text h2 {
         font-size: 43px;
     }
+
     .intro-newslatter input[type=text],
     .intro-newslatter input[type=email] {
         width: 33%;
     }
+
     .intro-newslatter .site-btn {
         min-width: 190px;
     }
+
     .signup-section .signup-bg {
         display: none;
     }
+
     .course-search-form {
         text-align: center;
     }
+
     .course-search-form input[type=text],
     .course-search-form input[type=email] {
         width: 48.1%;
         margin-bottom: 20px;
     }
+
     .course-search-form input[type=text].last-m,
     .course-search-form input[type=email].last-m {
         margin-right: 0;
     }
+
     .search-section.ss-other-page .search-warp {
         padding: 60px 30px 30px;
     }
+
     .search-section.ss-other-page .course-search-form input[type=text],
     .search-section.ss-other-page .course-search-form input[type=email] {
         width: 48.5%;
     }
+
     .course-item .course-thumb {
         height: 215px;
     }
+
     .widget-item {
         width: 33.3333%;
         margin-bottom: 50px;
     }
+
     .course-item.featured-course .course-thumb {
         position: relative;
         width: 100%;
         height: 350px;
     }
+
     .course-meta-area {
         padding: 35px 20px;
     }
+
     .course-meta {
         display: inline-block;
         padding: 5px 30px;
         width: calc(50% - 3px);
         margin-bottom: 15px;
     }
+
     .course-meta:nth-child(2) {
         border-right: none;
     }
@@ -2296,12 +2425,15 @@ cards .card .img{
     .section-title {
         padding: 0;
     }
+
     .section-title h2 {
         font-size: 40px;
     }
+
     .header-btn {
         display: none;
     }
+
     .nav-switch {
         display: block;
         float: right;
@@ -2315,6 +2447,7 @@ cards .card .img{
         -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.25);
         box-shadow: 0 0 13px rgba(0, 0, 0, 0.25);
     }
+
     .main-menu {
         background: #fff;
         margin-top: 22px;
@@ -2325,9 +2458,11 @@ cards .card .img{
         display: none;
         z-index: 999;
     }
+
     .main-menu ul li {
         display: block;
     }
+
     .main-menu ul li a {
         margin-left: 0;
         padding: 17px 25px;
@@ -2335,57 +2470,72 @@ cards .card .img{
         display: block;
         color: #474747;
     }
+
     .hero-text {
         margin-bottom: 50px;
     }
+
     .hero-text h2 {
         font-size: 40px;
     }
+
     .intro-newslatter {
         text-align: center;
     }
+
     .intro-newslatter input[type=text],
     .intro-newslatter input[type=email] {
         margin-bottom: 20px;
         width: 47.6%;
     }
+
     .intro-newslatter input[type=text].last-s,
     .intro-newslatter input[type=email].last-s {
         margin-right: 0;
     }
+
     .search-warp {
         padding: 40px 30px 30px;
     }
+
     .course-search-form input[type=text],
     .course-search-form input[type=email] {
         width: 100%;
         margin-bottom: 20px;
         margin-right: 0;
     }
+
     .signup-warp {
         padding: 0 60px;
     }
+
     .signup-section .signup-bg {
         display: none;
     }
+
     .widget-item {
         width: 50%;
         margin-bottom: 50px;
     }
+
     .search-section.ss-other-page .search-warp {
         padding: 30px;
     }
+
     .search-section.ss-other-page .section-title h2 {
         background: #d82a4e;
     }
+
     .course-item.featured-course .course-thumb {
         position: relative;
         width: 100%;
         height: 350px;
     }
+
     .course-meta-area {
         padding: 35px 20px;
     }
+
     .course-meta {
         display: inline-block;
         padding: 5px 0;
@@ -2401,33 +2551,41 @@ cards .card .img{
     .hero-section {
         height: auto;
     }
+
     .intro-newslatter {
         padding-bottom: 100px;
     }
+
     .intro-newslatter input[type=text],
     .intro-newslatter input[type=email] {
         margin-bottom: 20px;
         width: 100%;
         margin-right: 0;
     }
+
     .course-search-form .site-btn {
         min-width: auto;
         padding: 16px 20px;
     }
+
     .signup-warp {
         padding: 0;
     }
+
     .signup-form,
     .contact-form {
         padding: 30px;
     }
+
     .course-filter li {
         font-size: 14px;
     }
+
     .widget-item {
         width: 100%;
         margin-bottom: 50px;
     }
+
     .course-meta-area .price-btn {
         margin-bottom: 20px;
     }
@@ -2439,46 +2597,57 @@ cards .card .img{
     .section-title h2 {
         font-size: 30px;
     }
+
     .signup-form,
     .contact-form {
         padding: 20px;
     }
+
     .search-warp {
         padding: 40px 20px 30px;
     }
+
     .course-search-form {
         padding: 44px 20px;
     }
+
     .contact-form-warp {
         padding: 40px 15px;
     }
+
     .contact-form-warp .contact-form {
         padding: 50px 15px 40px;
     }
+
     .signup-form .site-btn,
     .contact-form .site-btn {
         min-width: auto;
         padding: 17px 20px;
     }
+
     .contact-info-area .phone-number {
         margin-bottom: 50px;
     }
+
     .contact-info-area .phone-number h2 {
         font-size: 24px;
     }
+
     .contact-info-area .contact-list {
         padding-left: 8px;
     }
+
     .contact-info-area .social-links {
         padding-left: 0;
     }
+
     .contact-info-area .social-links a {
         margin-right: 10px;
     }
 }
 
 .brand-text {
-    color: #d82a4e !important;
+    color: #370387 !important;
 }
 
 .empty-results {
@@ -2490,7 +2659,7 @@ cards .card .img{
 }
 
 .empty-results a {
-    color: #9ca3af!important;
+    color: #9ca3af !important;
     text-decoration: underline;
 }
 
@@ -2503,7 +2672,7 @@ cards .card .img{
     font-size: 2.2rem;
     line-height: 1.25;
     letter-spacing: -.05rem;
-    color: #000;
+    color: #a600f2;
     margin-bottom: 0.8rem;
     margin-top: 2.2rem;
 }
@@ -2549,7 +2718,7 @@ cards .card .img{
     height: 550px;
 }
 
-.area-course{
+.area-course {
     height: 400px;
 }
 
@@ -2577,6 +2746,13 @@ cards .card .img{
     text-align: center;
     padding-top: 170px;
     margin-bottom: 60px;
+}
+
+.cart-panel{
+    text-align: center;
+    padding-top: 170px;
+    margin-bottom: 50px;
+    color: #000;
 }
 
 .hero-cart-text h2 {

@@ -1,12 +1,10 @@
 <!-- Hero section -->
 <section
-    class="hero-section set-bg"
-    style="height: 500px" data-setbg=""
->
+    class="panel">
     <div class="container">
-        <div class="hero-text text-white">
+        <div class="panel-text">
             <h2>
-                {{ __("Gestiona tu perfil como profesor en :app Perú desde aquí", ["app" => env("APP_NAME")]) }}
+                {{ __("Bienvenido al Dashboard de Gritastic") }}
             </h2>
         </div>
     </div>

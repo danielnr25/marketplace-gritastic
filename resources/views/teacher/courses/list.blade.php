@@ -2,9 +2,9 @@
 <section class="course-section spad">
     <div class="container">
         <div class="section-title mb-3 mt-0">
-            <h2>{{ __("Tus cursos") }}</h2>
-            <a href="{{ route('teacher.courses.create') }}" class="site-btn">
-                {{ __("Crear curso") }}
+            <h2>{{ __("Empieza a vender") }}</h2>
+            <a href="{{ route('teacher.courses.create') }}" class="crear-btn">
+                {{ __("Sube tu producto") }}
             </a>
         </div>
     </div>
@@ -20,11 +20,10 @@
                         <div class="course-info">
                             <div class="course-text">
                                 <h5>{{ $course->title }}</h5>
-                                <div class="students">{{ __(":count Estudiantes", ['count' => $course->students_count]) }}</div>
                             </div>
                             <div class="course-author">
                                 <a href="{{ route("teacher.courses.update", ["course" => $course]) }}">
-                                    {{ __("Gestionar curso") }}
+                                    {{ __("Gestionar producto") }}
                                 </a>
                             </div>
                         </div>
@@ -34,7 +33,7 @@
             @empty
                 <div class="container">
                     <div class="empty-results">
-                        {!! __("No tienes ningún curso todavía: :link", ["link" => "<a href='".route('teacher.courses.create')."'>Crear mi primer curso</a>"]) !!}
+                        {!! __("No tienes ningún producto todavía: :link", ["link" => "<a href='".route('teacher.courses.create')."'>Crear mi producto</a>"]) !!}
                     </div>
                 </div>
             @endforelse

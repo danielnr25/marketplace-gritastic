@@ -19,7 +19,7 @@ class CreateCoursesTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
 
-            $table->string('title')->unique();
+            $table->string('title');
             $table->string('picture');
             $table->text('description');
             $table->float('price');

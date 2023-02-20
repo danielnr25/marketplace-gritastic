@@ -45,7 +45,7 @@ class CourseController extends Controller
         $reviewed = $course->reviews->contains('user_id', '=',auth()->id());
         if ($reviewed){
             return redirect(route('courses.learn', ["course" => $course]))
-                ->with("message", ["danger", __("Ya has valorado este curso")]);
+                ->with("message", ["danger", __("Ya has valorado este producto.")]);
 
         }
         $this->validate(request(), [
@@ -62,7 +62,7 @@ class CourseController extends Controller
         ]);
 
         return redirect(route('courses.learn', ["course" => $course]))
-            ->with("message", ["success", __("Muchas gracias por valorar el curso")]);
+            ->with("message", ["success", __("Muchas gracias por valorar el esfuerzo.")]);
     }
 
     public function byCategory(Category $category) {

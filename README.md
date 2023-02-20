@@ -27,7 +27,7 @@ El sistema está realizado con el Framework Laravel y cuenta con las siguientes 
   - **DB_DATABASE=** db_marketplace
   - **DB_USERNAME=** root
   - **DB_PASSWORD=**
-  
+  php
 - Comando para APP_KEY con **php artisan key:generate**
 - Correr las migraciones con **php artisan migrate --seed**
 - Luego **php artisan serve**

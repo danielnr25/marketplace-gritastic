@@ -1,18 +1,18 @@
 @guest
     <a href="{{ route("welcome") }}"
-       class="btn btn-info btn-lg btn-block" style="background:blue">
-        {{ __("Crear una cuenta") }}
+       class="btn btn-lg btn-block" style="background:#000; color:#fff">
+        {{ __("Registrate") }}
     </a>
 @else
     @can("purchaseCourse", $course)
-        <a href="{{ route("add_course_to_cart", ["course" => $course]) }}"
-            class="site-btn btn-block">
-            {{ __("Tomar el curso por :price", ["price" => $course->formatted_price]) }}
+        <a style="font-family: Arial, Helvetica, sans-serif;" href="{{ route("add_course_to_cart", ["course" => $course]) }}"
+            class="crear-btn btn-block">
+            {{ __("Adquiere por :price", ["price" => $course->formatted_price]) }}
         </a>
     @else
         <a href="{{ route('courses.learn', ["course" => $course]) }}"
-           class="site-btn btn-block">
-            {{ __("Ir al curso") }}
+           class="crear-btn btn-block">
+            {{ __("Revisa tu correo") }}
         </a>
     @endcan
 @endguest

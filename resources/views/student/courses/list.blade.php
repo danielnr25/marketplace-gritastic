@@ -2,7 +2,7 @@
 <section class="course-section spad">
     <div class="container">
         <div class="section-title mb-3 mt-0">
-            <h2>{{ __("Los cursos que has comprado") }}</h2>
+            <h2>{{ __("Tus imagenes compradas") }}</h2>
         </div>
     </div>
     <div class="course-warp">
@@ -31,7 +31,7 @@
             @empty
                 <div class="container">
                     <div class="empty-results">
-                        {!! __("No tienes ningún curso todavía: :link", ["link" => "<a href='".route('courses.index')."'>Ver cursos</a>"]) !!}
+                        {!! __("No tienes has realizado ninguna compra: :link", ["link" => "<a href='".route('courses.index')."'>Ver productos</a>"]) !!}
                     </div>
                 </div>
             @endforelse

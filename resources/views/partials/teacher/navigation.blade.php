@@ -5,23 +5,14 @@
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link text-white" href="{{ route('teacher.courses') }}">{{ __("Cursos") }}</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link text-white" href="{{ route('teacher.units') }}">{{ __("Unidades") }}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="{{ route('teacher.coupons') }}">{{ __("Cupones") }}</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link text-white" href="{{ route('teacher.units') }}">{{ __("Unidades") }}</a>
+                <a class="nav-link text-white" href="{{ route('teacher.courses') }}">{{ __("Crear imagen") }}</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white" href="{{ route('teacher.coupons') }}">{{ __("Cupones") }}</a>
             </li>
         </ul>
         <ul class="navbar-text">
-            <a class="nav-link" href="{{ route('welcome') }}">{{ __("Volver al inicio") }}</a>
+            <a class="nav-link" href="{{ route('welcome') }}">{{ __("Salir") }}</a>
         </ul>
     </div>
 </nav>

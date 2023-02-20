@@ -8,7 +8,7 @@ Aquí tienes los datos de tu pedido:
 <ul>
     @foreach($order->order_lines as $order_line)
         <li>
-            Curso: {{ $order_line->course->title }} - Precio: {{ \App\Helpers\Currency::formatCurrency($order_line->price) }}
+            Producto: {{ $order_line->course->title }} - Precio: {{ \App\Helpers\Currency::formatCurrency($order_line->price) }}
         </li>
     @endforeach
 </ul>

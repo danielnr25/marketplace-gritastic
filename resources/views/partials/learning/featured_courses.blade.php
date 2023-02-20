@@ -2,8 +2,8 @@
 <section class="course-section spad">
     <div class="container">
         <div class="section-title mb-0">
-            <h2>{{ __("Cursos destacados") }}</h2>
-            <p>{{ __("Aquí tienes los cursos destacados de la plataforma.") }}</p>
+            <h2>{{ __("Imagenes destacados") }}</h2>
+            <p>{{ __("Aquí tienes las imagenes destacados de la plataforma.") }}</p>
         </div>
     </div>
     <div class="course-warp">
@@ -30,7 +30,7 @@
                         <div class="course-info">
                             <div class="course-text">
                                 <h5>{{ $course->title }}</h5>
-                                <div class="students">{{ __(":count Estudiantes", ['count' => $course->students_count]) }}</div>
+<!--                                 <div class="students">{{ __(":count Estudiantes", ['count' => $course->students_count]) }}</div> -->
                             </div>
                             <div class="course-author">
                                 <div class="ca-pic set-bg" data-setbg="/img/authors/1.jpg"></div>
@@ -41,7 +41,7 @@
                 </div>
             @empty
                 <div class="empty-results">
-                    {!! __("No hay cursos destacados disponibles") !!}
+                    {!! __("No hay imagenes destacados disponibles") !!}
                 </div>
             @endforelse
             <!-- course -->

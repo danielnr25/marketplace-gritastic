@@ -13,8 +13,8 @@
         @if($cart->hasProducts())
             <div class="row">
                 <div class="col-12 mb-5">
-                    <a href="{{ route('checkout-form') }}" class="site-btn float-right">
-                        {{ __("Procesar pedido") }}
+                    <a href="{{ route('checkout-form') }}" class="crear-btn float-right">
+                        {{ __("Procesar compra") }}
                     </a>
                 </div>
             </div>

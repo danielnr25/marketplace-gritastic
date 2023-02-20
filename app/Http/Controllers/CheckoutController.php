@@ -60,7 +60,7 @@ class CheckoutController extends Controller
 
             DB::commit();
 
-            auth()->user()->invoiceFor(__("Compra de cursos"), $order->total_amount * 100, [], [
+            auth()->user()->invoiceFor(__("Compra de Imagenes"), $order->total_amount * 100, [], [
                 'tax_percent' => env('STRIPE_TAXES'),
             ]);
 
@@ -69,7 +69,7 @@ class CheckoutController extends Controller
             return redirect(route("student.index"))
                 ->with(
                     "message",
-                    ["success", __("Muchas gracias por tu pedido, ya puedes acceder a tus cursos.")]
+                    ["success", __("Muchas gracias por tu pedido, puedes revisar tu correo.")]
                 );
         }catch (IncompletePayment $exception) {
             return redirect()->route(

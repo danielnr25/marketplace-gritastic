@@ -2,7 +2,7 @@
 <section class="categories-section">
     <div class="container">
         <div class="section-title">
-            <h2 class="categories">{{ __("Categoría de imágenes populares") }}</h2>
+            <h2 class="categories">{{ __("Nuestras categorías de imágenes populares") }}</h2>
         </div>
         <div class="row">
             <!-- categorie -->

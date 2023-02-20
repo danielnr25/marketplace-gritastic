@@ -1,7 +1,7 @@
 @extends('layouts.learning')
 
 @section('hero')
-    @include('partials.learning.hero_cart', ['title' => __('Finalizar mi pedido')])
+    @include('partials.learning.hero_cart', ['title' => __('Finalizar pedido de compra')])
 @endsection
 
 @section('content')
@@ -11,10 +11,10 @@
 
         @if($cart->hasProducts())
             <div class="row">
-                <div class="col-12 mt-2 mb-2">
+                <div class="col-12 mb-2">
                     <form method="POST" action="{{ route('process_checkout') }}">
                         @csrf
-                        <button type="submit" class="site-btn float-right">
+                        <button type="submit" class="crear-btn float-right">
                             {{ __("Pagar") }}
                         </button>
                     </form>

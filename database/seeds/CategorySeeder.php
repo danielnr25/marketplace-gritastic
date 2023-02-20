@@ -14,11 +14,6 @@ class CategorySeeder extends Seeder
     {
         $categories = [
             [
-                "name" => "Abstractas",
-                "description" => "Las imágenes abstractas no son sólo para museos y galerías caras. Esta impresionante forma de arte también es extremadamente versátil. Una imagen abstracta puede detener a un espectador en sus pistas.",
-                "picture" => "https://images.ctfassets.net/hrltx12pl8hq/5GaLeZJlLyOiQC4gOA0qUM/a0398c237e9744ade8b072f99349e07a/shutterstock_152461202_thumb.jpg?fit=fill&w=480&h=270&fm=webp",
-            ],
-            [
                 "name" => "Arte",
                 "description" => "El arte es una expresión de la creatividad humana, que se manifiesta en una variedad de formas, incluyendo la pintura, la escultura, la arquitectura, la música, la literatura, la danza, el teatro.",
                 "picture" => "https://images.ctfassets.net/hrltx12pl8hq/2R1nDTrRheK6ae2IWAgGwW/e879fceb983dd133702ecdbfb560d4cd/Aerial?fit=fill&w=480&h=270&fm=webp",

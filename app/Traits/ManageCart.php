@@ -14,14 +14,14 @@ trait ManageCart {
     public function addCourseToCart(Course $course) {
         $cart = new Cart;
         $cart->addCourse($course);
-        session()->flash("message", ["success", __("Curso añadido al carrito correctamente.")]);
+        session()->flash("message", ["success", __("Producto añadido al carrito correctamente.")]);
         return redirect(route('cart'));
     }
 
     public function removeCourseFromCart(Course $course) {
         $cart = new Cart;
         $cart->removeCourse($course->id);
-        session()->flash("message", ["success", __("Curso eliminado del carrito correctamente.")]);
+        session()->flash("message", ["success", __("Producto eliminado del carrito correctamente.")]);
         return back();
     }
 

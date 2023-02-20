@@ -8,12 +8,12 @@
                     <div class="dimmer">
                         <div class="content">
                             <div class="center open">
-                                <div class="button">{{ __("Ver curso") }}</div>
+                                <div class="button">{{ __("Ver") }}</div>
                             </div>
                         </div>
                     </div>
                     <div class="img">
-                        <img class=" lazyloaded" data-src="https://d3puay5pkxu9s4.cloudfront.net/curso/4523/card_imagen.jpg" alt="Curso de lógica matemática" src="https://d3puay5pkxu9s4.cloudfront.net/curso/4523/card_imagen.jpg">
+                        <img class=" lazyloaded" src="{{ $course->picture }}">
                     </div>
                 </div>
                 <div class="description">
@@ -22,10 +22,10 @@
 
                     </div>
                     <div class="name-course">
-                        <p>Docente: {{ $course->teacher->name }}</p>
+                        <p>Autor: {{ $course->teacher->name }}</p>
                     </div>
-                    <div class="name-course">
-                        <p>Inscritos: {{ __(":count Estudiantes", ['count' => $course->students_count]) }}</p>
+                    <div class="name-course" style="font-family: Arial, Helvetica, sans-serif;">
+                        <p>Precio: {{ $course->price }}</p>
                     </div>
                     <div class="name-subcategory">
                         <h5>{{ __(":category", ["category" => $category->name]) }}</h5>
@@ -35,7 +35,7 @@
             @empty
             <div class="col-12">
                 <div class="empty-results">
-                    {!! __("No hay cursos para mostrar") !!}
+                    {!! __("No hay productos para mostrar") !!}
                 </div>
             </div>
             @endforelse

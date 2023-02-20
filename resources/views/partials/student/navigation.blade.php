@@ -5,13 +5,13 @@
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link text-white" href="{{ route('student.courses') }}">{{ __("Cursos") }}</a>
+                <a class="nav-link text-white" href="{{ route('student.courses') }}">{{ __("Compras") }}</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link text-white" href="{{ route('student.orders') }}">{{ __("Facturas") }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="{{ route('student.billing.credit_card_form') }}">{{ __("Datos de pago") }}</a>
+                <a class="nav-link text-white" href="{{ route('student.billing.credit_card_form') }}">{{ __("Mi tarjeta") }}</a>
             </li>
         </ul>
         <ul class="navbar-text">

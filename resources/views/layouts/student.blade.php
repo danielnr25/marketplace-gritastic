@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Educate Perú | Estudiante</title>
+    <title>Gritastic | Comprador</title>
     <meta charset="UTF-8">
     <meta name="description" content="WebUni Education Template">
     <meta name="keywords" content="webuni, education, creative, html">
@@ -67,6 +67,18 @@
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
+    });
+</script>
+<script>
+    let previousTitle = document.title;
+
+    window.addEventListener('blur', () => {
+        previousTitle = document.title;
+        document.title = '¡No te vayas! ¡Vuelve, te extraño 😔!';
+    });
+
+    window.addEventListener('focus', () => {
+        document.title = previousTitle;
     });
 </script>
 <script src="/js/functions.js"></script>

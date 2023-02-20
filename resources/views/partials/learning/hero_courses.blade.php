@@ -1,10 +1,10 @@
 <!-- Hero section -->
-<section class="hero-section set-bg" data-setbg="">
+<section class="hero-section set-bg">
     <div class="container">
         <div class="hero-text">
-            <h2>{{ __("Estudia en TEACH ME con los cursos que te ofrecemos, con los mejores docentes") }}</h2>
+            <h2>{{ __("Tu solución creativa todo en uno está aquí") }}</h2>
             <p class="web-p">
-                 Sin datos de tarjetas y sin llamadas de ventas. Solo cursos de calidad.
+                 Obtén las imágenes que necesitas cuando las necesites y sin compromisos
             </p>
         </div>
         @include('partials.learning.search')

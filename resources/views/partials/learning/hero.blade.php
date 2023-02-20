@@ -20,7 +20,7 @@
 
         @else
             <h2 class="welcome">
-                {{ __("Bienvenido a Gritastic :user", ['user' => auth()->user()->name]) }}
+                {{ __("Bienvenido a Gritastic: :user", ['user' => auth()->user()->name]) }}
             </h2>
         @endguest
     </div>

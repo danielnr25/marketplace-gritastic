@@ -1,23 +1,23 @@
 <div class="row">
-    <div class="table-responsive pt-5 mt-5">
-        <table class="table table-striped table-hover">
-            <thead class="thead-dark">
+    <div class="table-responsive pt-5">
+        <table class="table table-hover">
+            <thead class="border-1" style="text-align:center">
             <tr>
-                <th>{{ __("Curso") }}</th>
+                <th>{{ __("Producto") }}</th>
                 <th>{{ __("Precio") }}</th>
                 <th>{{ __("Acciones") }}</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody style="text-align: center;">
             @forelse($cart->getContent() as $course)
-                <tr>
+                <tr class="title-cart">
                     <td>{{ $course->title }}</td>
                     <td>{{ $course->formatted_price }}</td>
                     <td>
                         <a href="{{ route("remove_course_from_cart", ["course" => $course]) }}"
                            class="btn btn-outline-danger"
                         >
-                            {{ __("Eliminar") }}
+                           <img src="https://cdn-icons-png.flaticon.com/128/2907/2907762.png" alt="Eliminar" width="20px" height="20px">
                         </a>
                     </td>
                 </tr>
@@ -25,20 +25,20 @@
                 <tr>
                     <td colspan="3">
                         <div class="empty-results">
-                            {!! __("No tienes ningun curso en el carrito.") !!}
+                            {!! __("No tienes ningun producto en el carrito.") !!}
                         </div>
                     </td>
                 </tr>
             @endforelse
             </tbody>
-            <tfoot class="bg-dark brand-text font-weight-bold">
+            <tfoot class="brand-text font-weight-bold">
             <tr>
                 <td colspan="2">
                     @include("partials.learning.courses.coupon_form")
                 </td>
                 <td>
-                    <div class="pt-2" style="font-size: 25px">
-                        {{ __("Total :total", ["total" => $cart->totalAmount()]) }}
+                    <div class="pt-2 total-card">
+                        {{ __("Total: :total", ["total" => $cart->totalAmount()]) }}
                     </div>
                 </td>
             </tr>

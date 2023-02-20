@@ -50,7 +50,19 @@
 <script src="/js/circle-progress.min.js"></script>
 <script src="/js/owl.carousel.min.js"></script>
 <script src="/js/main.js"></script>
+<script>
+    let previousTitle = document.title;
 
+    window.addEventListener('blur', () => {
+        previousTitle = document.title;
+        document.title = '¡No te vayas! ¡Vuelve 🙀!';
+    });
+
+    window.addEventListener('focus', () => {
+        document.title = previousTitle;
+    });
+</script>
 @stack('js')
+
 </body>
 </html>

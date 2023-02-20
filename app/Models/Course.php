@@ -64,9 +64,9 @@ class Course extends Model
     //Rango de precio de los cursos.
     const prices =[
       '9.99' => '9.99',
-      '12.99' => '12.99',
       '19.99' => '19.99',
       '29.99' => '29.99',
+      '39.99' => '39.99',
       '49.99' => '49.99',
     ];
 
