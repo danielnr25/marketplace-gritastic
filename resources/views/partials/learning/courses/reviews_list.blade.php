@@ -18,6 +18,6 @@
 @empty
 <div class="alert alert-dark">
     <i class="fa fa-info-circle"></i>
-    {{ __("Este curso taodavóa no tiene valoraciones") }}
+    {{ __("Esta imagen no tiene valoraciones") }}
 </div>
 @endforelse

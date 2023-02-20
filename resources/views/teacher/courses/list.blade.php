@@ -10,38 +10,39 @@
     </div>
     <div class="course-warp">
         <div class="row course-items-area">
-        @forelse($courses as $course)
+            @forelse($courses as $course)
             <!-- course -->
-                <div class="mix col-lg-4 col-md-6 col-sm-6">
-                    <div class="course-item">
-                        <div class="course-thumb set-bg" data-setbg="{{ $course->imagePath() }}">
-                            <div class="price">Precio: {{ $course->price }}€</div>
+            <div class="mix col-lg-4 col-md-6 col-sm-6">
+                <div class="course-item">
+                    <div class="course-info">
+                        <div class="img">
+                            <img id="imagen" src="{{ $course->picture }}" alt="">
                         </div>
-                        <div class="course-info">
-                            <div class="course-text">
-                                <h5>{{ $course->title }}</h5>
-                            </div>
-                            <div class="course-author">
-                                <a href="{{ route("teacher.courses.update", ["course" => $course]) }}">
-                                    {{ __("Gestionar producto") }}
-                                </a>
-                            </div>
+                        <div class="course-text">
+                            <h5>{{ $course->title }}</h5>
+                        </div>
+                        <div class="price">Precio: {{ $course->price }}€</div>
+                        <div class="course-author">
+                            <a href="{{ route("teacher.courses.update", ["course" => $course]) }}">
+                                {{ __("Gestionar producto") }}
+                            </a>
                         </div>
                     </div>
                 </div>
-                <!-- course end -->
+            </div>
+            <!-- course end -->
             @empty
-                <div class="container">
-                    <div class="empty-results">
-                        {!! __("No tienes ningún producto todavía: :link", ["link" => "<a href='".route('teacher.courses.create')."'>Crear mi producto</a>"]) !!}
-                    </div>
+            <div class="container">
+                <div class="empty-results">
+                    {!! __("No tienes ningún producto todavía: :link", ["link" => "<a href='".route(' teacher.courses.create')."'>Crear mi producto</a>"]) !!}
                 </div>
+            </div>
             @endforelse
         </div>
 
         <div class="row">
             @if(count($courses))
-                {{ $courses->links() }}
+            {{ $courses->links() }}
             @endif
         </div>
     </div>
