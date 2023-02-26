@@ -20,7 +20,7 @@
         </div>
         <div class="col-lg-3">
             <div class="">
-                <img src="https://0.soompi.io/wp-content/uploads/2018/04/08212451/Seungkwan.jpg" class="img-top" alt="...">
+                <img src="img/ghiro.jpg" class="img-top" alt="...">
                 <div class="card-img">
                     <h3 class="card-author">Ghiro Fernando Luck Herrera</h3>
 

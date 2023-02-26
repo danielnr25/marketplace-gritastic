@@ -16,7 +16,8 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="/css/owl.carousel.css"/>
+    <link rel="stylesheet" href="/css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="/css/style.css"/>
 
 
@@ -41,7 +42,8 @@
 
 @yield('content')
 
-@include('partials.learning.footer')
+
+
 
 <!--====== Javascripts & Jquery ======-->
 <script src="/js/jquery-3.2.1.min.js"></script>
@@ -62,7 +64,8 @@
         document.title = previousTitle;
     });
 </script>
+@yield('scripts')
 @stack('js')
-
+@include('partials.learning.footer')
 </body>
 </html>
