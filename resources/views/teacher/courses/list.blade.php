@@ -34,7 +34,7 @@
             @empty
             <div class="container">
                 <div class="empty-results">
-                    {!! __("No tienes ningún producto todavía: :link", ["link" => "<a href='".route(' teacher.courses.create')."'>Crear mi producto</a>"]) !!}
+                    {!! __("No tienes ningún producto todavía: :link", ["link" => "<a href='".route('teacher.courses.create')."'>Crear mi producto</a>"]) !!}
                 </div>
             </div>
             @endforelse

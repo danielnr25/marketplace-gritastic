@@ -21,4 +21,8 @@ class WelcomeController extends Controller
         return view('welcome', compact('categories', 'featuredCourses'));
 
     }
+
+    public function about(){
+        return view('about');
+    }
 }

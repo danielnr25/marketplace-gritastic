@@ -55,7 +55,7 @@
 
     window.addEventListener('blur', () => {
         previousTitle = document.title;
-        document.title = '¡No te vayas! ¡Vuelve 🙀!';
+        document.title = '¡No te vayas! ¡Vuelve 😔!';
     });
 
     window.addEventListener('focus', () => {

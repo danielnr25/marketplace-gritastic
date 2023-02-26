@@ -31,9 +31,9 @@
                 <nav class="main-menu">
                     <ul>
                         <li><a href="{{ route('welcome') }}" class="">{{ __("Inicio") }}</a></li>
-                        <li><a href="{{ route('courses.index') }}">{{ __("Productos") }}</a></li>
-                        <li><a href="blog.html">Nosotros</a></li>
-                        <li><a href="#" id="instructor-button">{{ __("Vender") }}</a>
+                        <li><a href="{{ route('courses.index') }}" class="">{{ __("Productos") }}</a></li>
+                        <li><a href="{{ route('about')}}" class="">Nosotros</a></li>
+                        <li><a href="#" id="instructor-button" class="">{{ __("Vender") }}</a>
                             @include('partials.learning.modals.instructor')
                         </li>
                         @teacher
@@ -80,4 +80,6 @@
         $("#instructor-modal").modal();
     })
 </script>
+
 @endpush
+

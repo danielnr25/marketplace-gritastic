@@ -17,7 +17,7 @@
                         </div>
                         <div class="course-text">
                             <h5>{{ $course->title }}</h5>
-                            <div class="students">{{ __(":count Estudiantes", ['count' => $course->teacher->name]) }}</div>
+                            <div class="students">{{ __(":count", ['count' => $course->teacher->name]) }}</div>
                         </div>
                         <div class="course-author">
                             <a onclick="descargar()" >
@@ -31,7 +31,7 @@
             @empty
             <div class="container">
                 <div class="empty-results">
-                    {!! __("No tienes has realizado ninguna compra: :link", ["link" => "<a href='".route(' courses.index')."'>Ver productos</a>"]) !!}
+                    {!! __("No tienes has realizado ninguna compra: :link", ["link" => "<a href='".route('courses.index')."'>Ver productos</a>"]) !!}
                 </div>
             </div>
             @endforelse
@@ -46,4 +46,15 @@
 </section>
 <!-- course section end -->
 
+@push(js)
+<script>
+    function descargar() {
+        var imagen = document.getElementById("imagen").src;
+        var link = document.createElement("a");
+        link.download = "imagen.png";
+        link.href = imagen;
+        link.click();
+    }
+</script>
 
+@endpush
