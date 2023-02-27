@@ -46,7 +46,7 @@
 </section>
 <!-- course section end -->
 
-@push(js)
+@push('js')
 <script>
     function descargar() {
         var imagen = document.getElementById("imagen").src;
